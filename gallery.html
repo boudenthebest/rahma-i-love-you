@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* تصميم الخلفية */
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* تصميم الصور */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* تصميم الزر الرجوع */
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #ff69b4;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/250x250?text=Image1" alt="Image 1">
+        <img src="https://via.placeholder.com/250x250?text=Image2" alt="Image 2">
+        <img src="https://via.placeholder.com/250x250?text=Image3" alt="Image 3">
+        <img src="https://via.placeholder.com/250x250?text=Image4" alt="Image 4">
+        <img src="https://via.placeholder.com/250x250?text=Image5" alt="Image 5">
+    </div>
+
+    <!-- زر الرجوع إلى الصفحة الرئيسية -->
+    <a href="index.html" class="back-button">Back to Main Page</a>
+</body>
+</html>
