@@ -52,12 +52,13 @@
             text-decoration: none; /* إزالة الخط تحت الرابط */
         }
 
-        /* تصميم الصفحة الثانية */
+        /* تصميم الصفحة الخاصة بالصور */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
+            padding: 20px;
         }
 
         .gallery img {
@@ -87,16 +88,23 @@
         </p>
 
         <!-- زر التوجيه إلى معرض الصور -->
-        <a href="gallery.html" class="button">My Gallery</a>
+        <button class="button" onclick="scrollToGallery()">My Gallery</button>
     </div>
 
-    <!-- صفحة المعرض (gallery.html) -->
-    <div class="gallery">
+    <!-- قسم المعرض (الصور) -->
+    <div class="gallery" id="gallery">
         <img src="https://via.placeholder.com/250x250?text=Image1" alt="Image 1">
         <img src="https://via.placeholder.com/250x250?text=Image2" alt="Image 2">
         <img src="https://via.placeholder.com/250x250?text=Image3" alt="Image 3">
         <img src="https://via.placeholder.com/250x250?text=Image4" alt="Image 4">
         <img src="https://via.placeholder.com/250x250?text=Image5" alt="Image 5">
     </div>
+
+    <script>
+        // دالة للتمرير إلى قسم المعرض
+        function scrollToGallery() {
+            document.getElementById("gallery").scrollIntoView({behavior: "smooth"});
+        }
+    </script>
 </body>
 </html>
